@@ -240,7 +240,13 @@ footer{
     padding: 0;
   }
 }
+.form label{
+	margin-bottom:10px;
+}
 
+.form textarea{
+	resize: none;
+}
 input:focus,
 textarea:focus {
   outline: 3px solid var(--red-site);;
@@ -284,7 +290,10 @@ ul {
 	background: #fff;
 	
 }
-
+.contacts	 .fas{
+margin-top:30px;
+	font-size:2rem;
+}
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -315,13 +324,32 @@ textarea {
 
 button {
   background: lightgrey;
-  width: 100%;
+  
   border: 0;
 }
-button:hover, button:focus {
-  background: var(--red-site);
-	outline: 0;
+.form button{
+		border-radius: 25px;
+		height: 50px;
+		margin:auto;
+		
+    padding: 16px 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: .688rem;
+    line-height: 18px;
+    letter-spacing: 1.54px;
+		text-transform: uppercase;
+		box-shadow: 10px 10px 20px 0 rgba(255,84,117,0.46);
+    color: #fff;
+    background-color: var(--red-site);
+}
+
+.form button:hover, .form button:focus {
+	cursor: pointer;
+	opacity: .9;
 	color:lightgrey;
+
+	
 }
 
 /*Fin style form*/
@@ -532,6 +560,11 @@ color:black;
 .socialNetwork div i{
 	font-size:3rem;
 	margin:0px 15px;
+	color:darkblue;
+
+}
+.socialNetwork div i:hover{
+	color:var(--red-site);
 }
 .circle:hover{
 	background-color:grey;
@@ -561,21 +594,6 @@ color:black;
 	display: flex;}
 
 /*Fin style about*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
