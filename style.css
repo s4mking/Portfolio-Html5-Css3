@@ -1,0 +1,772 @@
+:root {
+	--red-site: #ef4b6c;
+	--blue-site:#00ACB5;
+}
+
+body{
+	margin:0;
+	background-color:#EEEEEE;
+	font-family: 'Montserrat', sans-serif;
+	margin:0px 15%;
+}
+header{
+	background-color: #EAE8E8;
+	padding:15px 0;
+}
+.header{
+	display:flex;
+	justify-content: space-between;
+	vertical-align: middle;
+		width: 100%;
+		z-index: 3;
+}
+
+.menu_header_content{
+	display:flex;
+}
+
+.menu_header{
+	display:flex;
+	align-items: center;
+}
+
+.header ul li{
+	list-style: none;
+	padding-right: 30px;
+	display:flex;
+	align-items:center;
+}
+.header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	display:flex;
+	align-items:center;
+	}
+	.header ul li a{
+		color: #525962;
+		text-decoration: none;
+	}
+	.header ul li a:hover{
+		color: #ef4b6c;
+	}
+	.header ul li.active a {
+		color: #ef4b6c;
+	opacity: .7;
+	}
+	
+	.welcome img:nth-child(3){
+		width:300px;
+		height:300px;
+		margin-top:40px;
+		border-bottom-left-radius:40%;
+		border-bottom-right-radius:40%;
+	}
+	.welcome img:nth-child(4){
+		width:800px;
+		height:300px;
+		margin-top:80px;
+	}
+
+
+.header ul li:last-child{
+	margin-right:30px;
+}
+.logo{
+	height: 200px;
+	width:200px;
+}
+.logo img{
+	width:200px;
+	height:200px;
+}
+.sub_headefr{
+	background-color: #FFD9D9;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.skills{
+	display:flex;
+	justify-content: space-between;	
+	flex-wrap: wrap;
+	
+}
+body .welcome{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+.skill{
+	box-sizing: border-box;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	flex: 1 0 25%;
+}
+
+.yellow{
+	height: 50px;
+	width:50px;
+	background-color:#FFFB93;
+}
+
+.green{
+	
+	height:250px;
+	background-color:#DFFF98;
+	flex:45%;
+	margin-left:10px;
+}
+.art{
+	display:flex;
+	
+}
+
+.mark{
+	padding-top:60px;
+}
+
+.action{
+	margin:60px 0;
+}
+
+.main{
+	margin-top:30px;
+	margin-bottom:50px;
+}
+.sep{
+	width:70%;
+	margin:35px 15%;
+	text-align: center;
+}
+
+.content{
+	flex:40%;
+}
+.sub_content{
+	width:80%;
+	margin-left:10%;
+}
+
+
+footer{
+	height:100px;
+	background-color: #EAE8E8;
+}
+  
+  /*Test sam*/
+  
+  
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+	background: #333;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+	top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+	top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+	display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu_header_content {
+	max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+  }
+/*Style form*/
+
+.contain_form {
+  margin-left: auto;
+  margin-right: auto;
+	padding: 1em;
+	
+}
+@media (min-width: 600px) {
+  .contain_form {
+    padding: 0;
+  }
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--red-site);;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.wrapper {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.wrapper > * {
+  padding: 1em;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+	background: #00ACB5;
+	text-align:center;
+  color: #fff;
+}
+
+.form {
+	background: #fff;
+	
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	
+}
+form label {
+  display: block;
+}
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+.three-quarter-width{
+	grid-column: 1 / 3;
+}
+.three-quarter-width input{
+	width:49%;
+}
+button,
+input,
+textarea {
+  padding: 1em;
+}
+
+button {
+  background: lightgrey;
+  width: 100%;
+  border: 0;
+}
+button:hover, button:focus {
+  background: var(--red-site);
+	outline: 0;
+	color:lightgrey;
+}
+
+/*Fin style form*/
+/*Style projets*/
+
+.containerProjets{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contentProjets{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 250px;
+	border: 1px solid #f1f1f1;
+	margin:30px 30px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card-inner img{
+	width:280px;
+	height:250px;
+	
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #EEEEEE;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #00ACB5;
+  color: lightgray;
+  transform: rotateY(180deg);
+}
+.flip-card  a{
+	text-decoration: none;
+	color:var(--red-site);
+}
+/*fin Style projets*/
+
+/*Style about*/
+
+.about{
+	color: white;
+	width:25vw;
+	background-color: #5C7C94;
+	padding:30px;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+ .photo img{
+		width: 250px;
+	height:250px;
+	margin: auto;
+}
+.photo{
+	width: 251px;
+	height:251px;
+	background-color: #000;
+	border: 2px solid #CCC;
+	border-radius: 50%;
+}
+
+.about h2{
+	margin-top:40px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.about h3{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.about p{
+	margin-top:5px;
+	font-size:14px;
+	
+	
+}
+.bottom{
+	text-align: left;
+	position: absolute;
+	width: 100%;
+	bottom:20px;
+}
+.point_container p{
+	font-weight: bold;
+}
+table{
+width: 100%;
+}
+
+.skill{ 
+	flex:3;
+}
+.skill p{
+	font-size:15px;
+}
+.container{
+	width:70%;
+	padding-left:10%;
+
+}
+
+/*Points*/
+.point_container{
+	display:flex;
+}
+.point_container div{
+	width: 15px;
+	height: 15px;
+	border: 2px solid;
+	margin-right:8px;
+	border-radius: 50%;
+}
+.point_container .full{
+background-color:#000;
+}
+
+.parente{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.parente p{
+	width:40%;
+	text-align: left;
+}
+.parente h4{
+	width:40%;
+	text-align: left;
+	font-size: 22px;
+}
+.parente li{
+	width:10%;
+	list-style-type: none;
+	font-weight: bold;
+}
+
+
+.interet{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	margin-bottom: 20px;
+
+}
+.interet img{
+	width:50px;
+	height:50px;
+	padding-top: 10px;
+
+}
+
+.interet p{
+font-size: 10px;
+color:black;
+}
+.interet .circle{
+		width: 90px;
+	height: 90px;
+	border: 2px solid;
+	margin:10px 15px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+.socialNetwork div{
+	width:auto;
+
+}
+.socialNetwork div i{
+	font-size:3rem;
+	margin:0px 15px;
+}
+.circle:hover{
+	background-color:grey;
+}
+.experience{
+	position: relative;
+}
+.border{
+	width:1px;
+	height: calc(100% - 20px);
+	position: absolute;
+	top: 10px;
+	left: -30px;
+	background-color: #000;
+}
+	.experience h3:before{
+		content: "";
+		width:10px;
+		height:10px;
+		background-color: #000;
+		display: block;
+		border-radius:50%;
+		margin-left:-35px;
+		margin-bottom:-17px;
+	}
+.containerAbout{
+	display: flex;}
+
+/*Fin style about*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+.art{
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.green{
+	align-self:center;
+	height:250px;
+	background-color:#DFFF98;
+	width:80%;
+	margin-left:10px;
+}
+.skills{
+	display:flex;
+}
+.skill{
+	flex: 1 0 50%;
+}
+	
+  }
+
+  @media (max-width: 767px) {
+	.header .menu_header_content {
+		clear: both; 
+		max-height: 0;
+		transition: max-height .2s ease-out;
+	  }
+	.art{
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+		
+	.green{
+		display: none;
+	}
+	.skills{
+		display:flex;
+		flex-direction: column;
+	}
+	.logo{
+		align-self: center;
+	}
+	  /* .skill{
+		flex-basis: 100%;
+	  } */
+  }
+  
+
+@media (min-width: 48em) {
+	.header li {
+	  float: left;
+	}
+	.header li a {
+	  padding: 20px 30px;
+	}
+	.header .menu {
+	  clear: none;
+	  float: right;
+	  max-height: none;
+	}
+	.header .menu-icon {
+	  display: none;
+	}
+  }
+	
+	
+
+
+
+
+
+
+
+
+
+	/*Animations*/
+
+	@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+.containerSvg {
+	width:80rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.containerSvg svg {
+	margin:auto;
+	align-self: center;
+	max-width: 50rem;
+  height: 200px;
+  fill: none;
+  stroke: grey;
+	stroke-width: 4;
+	
+}
+.containerSvg svg tspan > tspan {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: -1500;
+}
+.containerSvg svg tspan > tspan:nth-of-type(1) {
+  animation: draw 300ms 150ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(2) {
+  animation: draw 300ms 300ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(3) {
+  animation: draw 300ms 450ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(4) {
+  animation: draw 300ms 600ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(5) {
+  animation: draw 300ms 750ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(6) {
+  animation: draw 300ms 900ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(7) {
+  animation: draw 300ms 1050ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(8) {
+  animation: draw 300ms 1200ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(9) {
+  animation: draw 300ms 1350ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(10) {
+  animation: draw 300ms 1500ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(11) {
+  animation: draw 300ms 1650ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(12) {
+  animation: draw 300ms 1800ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(13) {
+  animation: draw 300ms 1950ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(14) {
+  animation: draw 300ms 2100ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(15) {
+  animation: draw 300ms 2250ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(16) {
+  animation: draw 300ms 2300ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(17) {
+  animation: draw 300ms 2450ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(18) {
+  animation: draw 300ms 2600ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(19) {
+  animation: draw 300ms 2750ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(20) {
+  animation: draw 300ms 2900ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(21) {
+  animation: draw 300ms 3150ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(22) {
+  animation: draw 300ms 3300ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(23) {
+  animation: draw 300ms 3450ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(24) {
+  animation: draw 300ms 3600ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(25) {
+  animation: draw 300ms 3600ms forwards;
+}
+.containerSvg svg tspan > tspan:nth-of-type(26) {
+  animation: draw 300ms 3750ms forwards;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/*Fin animations*/

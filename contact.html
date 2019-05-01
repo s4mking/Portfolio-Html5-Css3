@@ -1,0 +1,71 @@
+<!-- background-clip, text-fill-color -->
+<!--    de base, flex, responsive, breakpoints,keyframes, grid, bem, SAS, mail si possible -->
+<!DOCTYPE html>
+<html lang="fr">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" type="text/css" href="style.css">
+                <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+                <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Mon portfolio</title>
+                <div class='header'>
+                        <div class='logo'>
+                            <img src='img/logo.png' alt='logo'>
+                        </div>
+                            <div class='menu_header'>
+                                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                                <ul class='menu_header_content'>
+                                    <li class='active'><a href='index.html'>Accueil</a></li>
+                                    <li><a href='projets.html'>Projets</a></li>
+                                    <li><a href='apropos.html'>A propos</a></li>
+                                    <li><a href='contact.html'>Contact</a></li>
+                                </ul>
+                        </div>
+                    </div>
+            </head>
+<body>
+    <div class="contain_form">
+        <div class="wrapper">
+            <div class="contacts">
+            <h3>Mon contact</h3>
+        
+            <ul>
+                <li>Sup'Internet</li>
+                <li>95 avenue parmentier</li>
+                <li>Salle 204</li>
+                <li>S2e rangée</li>
+                <li>3e siège</li>
+            </ul>
+            </div>
+        
+            <div class="form">
+            <h3>Envoie moi un message</h3>
+            <form action="https://formspree.io/samuel.simonney@gmail.com" method="POST">
+                <p>
+                <label for="">Votre nom</label>
+                <input name="name" type="text">
+                </p>
+                <p class="three-quarter-width">
+                <label for="">Votre adresse</label>
+                <input name="adress" type="text">
+                </p>
+                <p>
+                <label for="">Sujet</label>
+                <input name="sujet" type="text">
+                </p>
+                <p class="full-width">
+                <label for="">Ecrivez votre message</label>
+                <textarea name="message" cols="30" rows="7"></textarea>
+                </p>
+                <p class="full-width">
+                <button>Envoyez</button>
+                </p>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
