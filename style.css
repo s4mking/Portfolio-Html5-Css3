@@ -35,7 +35,7 @@ header{
 	background-color: #EAE8E8;
 	padding:15px 0;
 }
-.menu_header h2{
+.menu_header img{
 	display:none;
 }
 .header{
@@ -194,7 +194,7 @@ footer{
 	cursor: pointer;
 	display: inline-block;
 	float: right;
-	padding: 18px 20px;
+	padding: 35px 20px;
 
 	position: relative;
 	top:0px;
@@ -380,6 +380,9 @@ button {
 	display:flex;
 	justify-content:space-between;
 	flex-wrap: wrap;
+	background-image: url('img/trianglify.png');
+	border-radius:10px;
+	margin-bottom:20px;
 }
 .flip-card {
   background-color: transparent;
@@ -515,6 +518,45 @@ width: 100%;
 }
 .point_container .full{
 background-color:#000;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote{
+font-size: 1.4em;
+width:60%;
+margin:50px auto;
+font-family:Open Sans;
+font-style:italic;
+color: #555555;
+padding:1.2em 30px 1.2em 75px;
+border-left:8px solid var(--blue-site) ;
+line-height:1.6;
+position: relative;
+background:#EDEDED;
+}
+
+.otro-blockquote::before{
+font-family:Arial;
+content: "\201C";
+color:var(--blue-site);
+font-size:4em;
+position: absolute;
+left: 10px;
+top:-10px;
+}
+
+.otro-blockquote::after{
+content: '';
+}
+
+.otro-blockquote span{
+display:block;
+color:#333333;
+font-style: normal;
+font-weight: bold;
+margin-top:1em;
 }
 
 .parente{
@@ -711,6 +753,7 @@ color:black;
 	padding:10%;
 	/* border:2px solid #D4D4D4; */
 	border-radius:3%;
+	
 	background: linear-gradient(to bottom, #94e2ef 0%,#00acb5 100%);
 		
 	display:flex;
@@ -954,6 +997,12 @@ align-items: center;
 			justify-content: center;
 			text-align: center;
 		}
+		body h1{
+			margin-left: 5vw;
+		}
+		.contentProjets{
+			background:none;
+		}
 		.header ul li a{
 			display:block;
 			padding: 20px 20px;
@@ -1010,9 +1059,10 @@ align-items: center;
 	.menu_header{
 		display:block;
 	}
-	.menu_header h2{
+	.menu_header img{
 		margin-left:10%;
 		display:inline-block;
+		width:20vw;
 	}
 	.menu_header ul {
     margin: 0;

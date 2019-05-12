@@ -2,30 +2,33 @@
 <!--    de base, flex, responsive, breakpoints,keyframes, grid, bem, SAS, mail si possible -->
 <!DOCTYPE html>
 <html lang="fr">
-        <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" type="text/css" href="style.css">
-                <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-                <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
-                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                <title>Mon portfolio</title>
-                <div class='header'>
-                        <div class='logo'>
-                                <a href='index.html'><img src='img/logo.png' alt='logo' title='logo'></a> 
-                        </div>
-                            <div class='menu_header'>
-                                    <input class="menu-btn" type="checkbox" id="menu-btn" />
-                                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                                <ul class='menu_header_content'>
-                                    <li class='active'><a href='index.html'>Accueil</a></li>
-                                    <li><a href='projets.html'>Projets</a></li>
-                                    <li><a href='apropos.html'>A propos</a></li>
-                                    <li><a href='contact.html'>Contact</a></li>
-                                </ul>
-                        </div>
-                    </div>
-            </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon portfolio</title>
+    <div class='header'>
+        <div class='logo'>
+            <a href='index.html'><img src='img/logo.png' alt='logo' title='logo'></a>
+        </div>
+        <div class='menu_header'>
+            <img src='img/logo.png' alt='logo'>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class='menu_header_content'>
+                <li class='active'><a href='index.html'>Accueil</a></li>
+                <li><a href='projets.html'>Projets</a></li>
+                <li><a href='apropos.html'>A propos</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</head>
+
 <body>
     <div class='containerProjets'>
         <h1>Mes principaux projets</h1>
@@ -33,76 +36,80 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                    <img src="img/http.png" alt="Avatar">
+                        <img src="img/http.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
-                    <h2>Golang</h2> 
-                    <p><a href='parser.html'>Parser récursif de liens</a></p> 
-                    <p>Réalisation d'un parser de site récursif permettant de passer sur tous les liens du sites et de tester leur validité.</p>
+                        <h2>Golang</h2>
+                        <p><a href='parser.html'>Parser récursif de liens</a></p>
+                        <p>Réalisation d'un parser de site récursif permettant de passer sur tous les liens du sites et
+                            de tester leur validité.</p>
                     </div>
                 </div>
-                </div>
-                <div class="flip-card">
+            </div>
+            <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                    <img src="img/chat.png" alt="Chat">
+                        <img src="img/chat.png" alt="Chat">
                     </div>
                     <div class="flip-card-back">
-                    <h2>Javascript</h2> 
-                    <p><a href='chat.html'>Création et connexion chat via API</a></p> 
-                    <p>Réalisation d'un chat en se connectant sur une en API, gestion de la connexion utilisation à l'aide d'un token.</p>
+                        <h2>Javascript</h2>
+                        <p><a href='chat.html'>Création et connexion chat via API</a></p>
+                        <p>Réalisation d'un chat en se connectant sur une en API, gestion de la connexion utilisation à
+                            l'aide d'un token.</p>
                     </div>
                 </div>
-                </div>
-                <div class="flip-card">
+            </div>
+            <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                    <img src="img/phptest.png" alt="Php">
+                        <img src="img/phptest.png" alt="Php">
                     </div>
                     <div class="flip-card-back">
-                    <h2>PHP</h2> 
-                    <p><a href='blackjack.html'>Jeu de Blackjack</a></p> 
-                    <p>Création d'un jeu de Blackjack multijoueur.</p>
+                        <h2>PHP</h2>
+                        <p><a href='blackjack.html'>Jeu de Blackjack</a></p>
+                        <p>Création d'un jeu de Blackjack multijoueur.</p>
                     </div>
                 </div>
-                </div>
-                <div class="flip-card">
+            </div>
+            <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                    <img src="img/python.png" alt="Python">
+                        <img src="img/python.png" alt="Python">
                     </div>
                     <div class="flip-card-back">
-                    <h2>Python</h2> 
-                    <p><a href='unicode.html'>Outil Unicode</a></p> 
-                    <p>Réalisation d'un un outil donnant des informations sur des caractères unicode.</p>
+                        <h2>Python</h2>
+                        <p><a href='unicode.html'>Outil Unicode</a></p>
+                        <p>Réalisation d'un un outil donnant des informations sur des caractères unicode.</p>
                     </div>
                 </div>
-                </div>
-                <div class="flip-card">
+            </div>
+            <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                    <img src="img/coliseum.png" alt="Coliseum">
+                        <img src="img/coliseum.png" alt="Coliseum">
                     </div>
                     <div class="flip-card-back">
-                    <h2>Semaine agence</h2> 
-                    <p><a href='semaineagence.html'>Etude d'un outil numérique pour la culture</a></p> 
-                    <p>Réalisation d'un parser de site récursif permettant de passer sur tous les liens du sites et de tester leur validité.</p>
+                        <h2>Semaine agence</h2>
+                        <p><a href='semaineagence.html'>Etude d'un outil numérique pour la culture</a></p>
+                        <p>Réalisation d'un parser de site récursif permettant de passer sur tous les liens du sites et
+                            de tester leur validité.</p>
                     </div>
                 </div>
-                </div>
-                <div class="flip-card">
+            </div>
+            <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                    <img src="img/shopping.png" alt="Shop">
+                        <img src="img/shopping.png" alt="Shop">
                     </div>
                     <div class="flip-card-back">
-                    <h2>Projet transversal</h2> 
-                    <p><a href='pt.html'>Projet transversal</a></p> 
-                    <p>Réalisation d'un site web ecommerce centré sur l'accessibilité.</p>
+                        <h2>Projet transversal</h2>
+                        <p><a href='pt.html'>Projet transversal</a></p>
+                        <p>Réalisation d'un site web ecommerce centré sur l'accessibilité.</p>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
